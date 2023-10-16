@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Tecnologia - Calculadora de Combustível</title>
+    <link rel="stylesheet" href="assets/css/combustivelCalc.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <article>
+        <div class="main">
+
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="https://rivertecnologia.com.br">Início</a></li>
+                        <li><a href="combustivelCalc.html">Calculadora de Combustível</a></li>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+            <div class="inputs">
+                <form>
+                    <h1 class="image">
+                        <img src="images/comb.png" alt="imagem de uma bomba de combustível assaltando o consumidor">
+                    </h1>
+                    <p>
+                        <label for="inDistancia">Distância (KM):</label>
+                        <input type="number" id="inDistancia" step="0.01" required>
+                    </p>
+                    <p>Viagem com ida e volta? <br>
+                        <label for ="viagemSim">Sim</label>
+                        <input type="radio" id="viagemSim" name="viagem" value="sim" required>
+                        <label for="viagemNao">Não</label>
+                        <input type="radio" id="viagemNao" name="viagem" value="nao" required>
+                    </p>
+                    <p>
+                        <label for="inQuantDias">Quantidade de dias:</label>
+                        <input type="number" id="inQuantDias" step="1">
+                    </p>
+                    <p>
+                        <label for="inPrecoLitro">Preço combustível (R$/L):</label> 
+                        <input type="number" id="inPrecoLitro" step="0.01" required>
+                    </p>
+                    <p>
+                        <label for="inMediaConsumo">Autonomia carro(KM/L):</label> 
+                        <input type="number" id="inMediaConsumo" step="0.01" required>
+                    </p>
+                    <br>
+                    <input type="submit" value="Calcular" id="btnSubmit">
+                    <input type="reset" id="btnReset">
+                </form>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Combustível Necessário</th>
+                            <th>Preço Total do Combustível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p class="outLitros"></p></td>
+                            <td><p class="outPreco"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+
+    <script src="script/combustivelCalc.js"></script>
+</body>
+
+</html>

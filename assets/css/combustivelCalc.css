@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    justify-content: space-between;
+}
+nav {
+    background-color: navy;
+    color: white;
+    width: 100%;
+    height: 62px;
+    position: fixed;
+    float: left;
+    align-items: center;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*padding: 10px 20px;*/
+    display: block;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+
+}
+
+/*nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 500ms;
+}*/
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 500ms;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*
+.image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 70%;
+    margin-left: -160px;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
+}
+*/
+.inputs {
+    font-size: 80%;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    margin-top: -150px;
+    left: 40%;
+    margin-left: -150px;
+}
+
+#btnSubmit {
+    background-color: green;
+    color: white;
+    width: 90px;
+    height: 25px;
+}
+
+#btnReset {
+    background-color: red;
+    color: white;
+    width: 90px;
+    height: 25px;
+}
+
+#inDistancia, #inPrecoLitro, #inMediaConsumo, #inQuantDias {
+    height: 30px;
+}
+
+#viagemSim, #viagemNao {
+    width: 18px;
+    height: 18px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: auto;
+}
+
+table tr,
+        table th,
+        table td {
+            border: 1px solid grey;
+            padding: 2px;
+            text-align: center;
+        }
+
+        tfoot td,
+        table th {
+            background-color: #ddd;
+        }
+
+.menu {
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+  }
